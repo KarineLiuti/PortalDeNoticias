@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Karinez/PortalDeNoticias#readme",
   "dependencies": {
+    "consign": "^0.1.6",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "mysql": "^2.15.0"
