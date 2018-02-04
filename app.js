@@ -1,6 +1,4 @@
-var express = require('express');
-var app = express();
-var msg = require('./mod_teste');
+var app = require('./config/server');
 
 app.set('view engine', 'ejs')
 
@@ -17,5 +15,5 @@ app.get('/noticias', (req, res) => {
 });
 
 app.listen(3000, (req, res) => {
-    console.log(msg());
+    console.log('Server ON');
 });
