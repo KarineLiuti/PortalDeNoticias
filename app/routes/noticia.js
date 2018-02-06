@@ -2,8 +2,9 @@ module.exports = (app) => {
     
     app.get('/noticia', (req, res) => {
         var connection = app.config.dbConnection();
+        var noticiasModel = app.app.models.noticiasModel;
             
-        connection.query('select * from noticias where id_noticia = 2', (erro, result) => {
+        noticiasModel.getNoticia(connection, (erro, result) => {
             res.render('noticias/noticia', {noticia : result});
         });
     });
