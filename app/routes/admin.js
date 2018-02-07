@@ -4,9 +4,7 @@ module.exports = (app) => {
     });    
 
     app.post('/noticias/salvar', (req, res) => {
-        res.send('chegou na página');
+        var noticias = req.body;
+        res.send(noticias);
     });   
-
-
-    
 }
