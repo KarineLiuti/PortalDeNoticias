@@ -12,6 +12,6 @@ module.exports.noticia = (application, req, res) => {
     var noticiasModel = new application.app.models.NoticiasDAO(connection);
         
     noticiasModel.getNoticia((erro, result) => {
-        res.render('noticias/noticias', {noticias : result});
+        res.render('noticias/noticia', {noticias : result});
     });
 };
