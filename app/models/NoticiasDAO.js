@@ -15,6 +15,10 @@ function NoticiasDAO(connection) {
     this._connection.query('insert into noticias set ?', noticia, callback);
   }
 
+  NoticiasDAO.prototype.get5UltimasNoticias = (callback) => {
+    this._connection.query('select * from noticias order by data_noticia limit 5', callback);
+  };
+
 }
 
 module.exports = () => {
