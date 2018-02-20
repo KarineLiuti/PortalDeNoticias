@@ -3,11 +3,11 @@ function NoticiasDAO(connection) {
   this._connection = connection;
 
   NoticiasDAO.prototype.getNoticias = (callback)  => {
-    this._connection.query('select * from noticias', callback);
+    this._connection.query('select * from noticias order by data_noticia desc', callback);
   }
 
   NoticiasDAO.prototype.getNoticia = (callback)  => {
-    this._connection.query('select * from noticias where id_noticia = 2', callback);
+    this._connection.query('select * from noticias where id_noticia = 5', callback);
   }
 
   NoticiasDAO.prototype.salvarNoticia = (noticia, callback) => {
