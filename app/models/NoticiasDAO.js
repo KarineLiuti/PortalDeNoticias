@@ -16,7 +16,8 @@ function NoticiasDAO(connection) {
   }
 
   NoticiasDAO.prototype.get5UltimasNoticias = (callback) => {
-    this._connection.query('select * from noticias order by data_noticia limit 5', callback);
+    console.log('entrei na funcao');
+    this._connection.query('select * from noticias order by data_noticia desc limit 5', callback);
   };
 
 }
