@@ -1,7 +1,6 @@
 # Portal De Noticias
 
-Projeto de portal de notícias utilizando NodeJS.
-Curso de NodeJS do Udemy.
+News portal project with NodeJS. Developed on Udemy NodeJS course.
 
 Install nodemon
 ```
