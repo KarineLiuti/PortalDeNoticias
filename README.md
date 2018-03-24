@@ -1,4 +1,4 @@
-# PortalDeNoticias
+# Portal De Noticias
 
 Projeto de portal de notícias utilizando NodeJS.
 Curso de NodeJS do Udemy.
